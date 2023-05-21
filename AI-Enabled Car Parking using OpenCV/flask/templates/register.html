@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="static/assets/css/registerpage.css">
+    <link rel="stylesheet" href="static/assets/css/titlebar.css">
+    <script src="https://kit.fontawesome.com/7d504d6674.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="titlebar">
+        <table>
+            <tr>
+                <td id="title">
+                    <a class="a-main" href="/hero">AI-Enabled Car Parking using OpenCV</a>  
+                </td>
+                <td class="navbar" onclick="home()" id="home">
+                    <a class="a-main" href="/hero">Home</a>  
+                </td>
+                <td class="navbar" onclick="log()" id="lgn">
+                    <a class="a-main" href="/login">Login</a>  
+                </td>
+                <td class="navbar" onclick="reg()" id="rgr">
+                    <a class="a-main active" href="#register">Register</a>  
+                </td>
+                <td class="navbar" onclick="result()">
+                    <a class="a-main" href="/model">Model</a>  
+                </td>
+                <td id="cont"></td>
+            </tr>      
+        </table>
+   </div>
+   <div id="trans"> 
+   </div>
+
+<!--Register Form-->
+    <div class="form">
+        <div class="form-panel">
+            <div class="form-header">
+            <h1>Register Account</h1>
+            </div>
+            <div class="form-content">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <span class="toggle-icon" onclick="toggle()">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <input type="password" id="password" name="password" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="cpassword">Confirm Password</label>
+                        <span class="toggle-icon2" onclick="toggle2()">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                        <input type="password" id="cpassword" name="cpassword" required="required"/>
+                    </div>
+                    <div class="form-group">
+                    <button type="submit">Register</button>
+                    </div>
+                    <div class="log">
+                        <p>Already have an account?<a id="loginrdrt" href="/login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="gap"></div>
+
+    <script>
+        function toggle() {
+          var icon = document.querySelector(".toggle-icon");
+    
+          if (icon.innerHTML === '<i class="fa-solid fa-eye-slash"></i>') {
+            icon.innerHTML = '<i class="fa-solid fa-eye"></i>';
+            document.getElementById("password").type = "password";
+        } 
+        else {
+            icon.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            document.getElementById("password").type = "text";
+          }
+        }
+    </script>
+    <script>
+        function toggle2() {
+          var icon = document.querySelector(".toggle-icon2");
+    
+          if (icon.innerHTML === '<i class="fa-solid fa-eye-slash"></i>') {
+            icon.innerHTML = '<i class="fa-solid fa-eye"></i>';
+            document.getElementById("cpassword").type = "password";
+        } 
+        else {
+            icon.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+            document.getElementById("cpassword").type = "text";
+          }
+        }
+    </script>
+
+</body>
+
+</html>

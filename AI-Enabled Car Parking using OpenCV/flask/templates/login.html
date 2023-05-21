@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="static/assets/css/loginpage.css">
+    <link rel="stylesheet" href="static/assets/css/titlebar.css">
+    <script src="https://kit.fontawesome.com/7d504d6674.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="titlebar">
+        <table>
+            <tr>
+                <td id="title">
+                    <a class="a-main" href="/hero">AI-Enabled Car Parking using OpenCV</a>  
+                </td>
+                <td class="navbar" onclick="home()" id="home">
+                    <a class="a-main" href="/hero">Home</a>  
+                </td>
+                <td class="navbar" onclick="log()" id="login">
+                    <a class="a-main active" href="#login">Login</a>  
+                </td>
+                <td class="navbar" onclick="reg()" id="reg">
+                    <a class="a-main" href="/register">Register</a>  
+                </td>
+                <td class="navbar" onclick="result()">
+                    <a class="a-main" href="/model">Model</a>  
+                </td>
+               
+                <td id="cont"></td>
+            </tr>      
+        </table>
+   </div>
+   <div id="trans"> 
+   </div>
+   
+<!-- Login Form-->
+<div class="form">
+    <div class="form-panel one">
+      <div class="form-header">
+        <h1>Account Login</h1>
+      </div>
+      <div class="form-content">
+        <form>
+          <div class="form-group">
+            <label for="username">Email</label>
+            <input id="username" type="text" name="username" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <span class="toggle-icon" onclick="toggle()">
+                <i class="fa-solid fa-eye"></i>
+            </span>
+            <input id="password" type="password" name="password" required="required"/>
+            
+          </div>
+          <div class="form-group">
+            <button type="submit">Log In</button>
+          </div>
+          <div class="sign">
+            <p>Don't have an account?<a id="signup" href="/register">Create an Account</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+    
+  <script>
+      function toggle() {
+        var icon = document.querySelector(".toggle-icon");
+  
+        if (icon.innerHTML === '<i class="fa-solid fa-eye-slash"></i>') {
+          icon.innerHTML = '<i class="fa-solid fa-eye"></i>';
+          document.getElementById("password").type = "password";
+      } 
+      else {
+          icon.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+          document.getElementById("password").type = "text";
+        }
+      }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url("../img/login_img.png") top center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+ }
+ #trans{
+     background-color: rgba(0, 0, 0, 0.5);
+     position: absolute;
+     top: 60px;
+     left: 0%;
+     width: 100%;
+     height: 100%;
+ }
+ #title{
+     letter-spacing: 2px;
+ }
+
+ #gap{
+     height: 20px;
+ }
+
+.form {
+    z-index: 15;
+    position: relative;
+    background: #FFFFFF;
+    width: 600px;
+    height: 650px;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    margin: 100px auto 10px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-header {
+    margin: 0;
+}
+.form-header h1 {
+    margin: 0;
+    padding-bottom: 30px;
+    padding-left: 120px;
+    color: #4285F4;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 20px;
+}
+
+.form-group label {
+    display: block;
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.form-group input {
+    outline: none;
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    transition: 0.3s ease;
+}
+
+.form-group button {
+    outline: none;
+    background: #4285F4;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.form-panel {
+    padding: 60px calc(5% + 60px) 60px 60px;
+    box-sizing: border-box;
+}
+
+#loginrdrt{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: inherit;
+    color: #4285F4;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+.lgn{
+    padding-left: 120px;
+    padding-top: 5px;
+}
+
+.toggle-icon{
+    position: relative;
+    top: 36px;
+    right: 20px;
+    cursor: pointer;
+}
+.toggle-icon2{
+    position: relative;
+    top: 36px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
